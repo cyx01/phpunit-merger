@@ -79,6 +79,11 @@ class LogCommand extends Command
 
     private function addTestSuites(\DOMElement $parent, array $testSuites)
     {
+        if(array_key_exists('testsuite', $testSuites) && !empty($testSuites['testsuite']))
+        {
+            $this->addTestSuites($parent, $testSuites['testsuite']);
+        }
+
         foreach ($testSuites as $testSuite) {
             if (empty($testSuite['@attributes']['name'])) {
                 if (!empty($testSuite['testsuite'])) {
