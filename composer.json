@@ -1,13 +1,12 @@
 {
-    "name": "nimut/phpunit-merger",
+    "name": "cyx01/phpunit-merger",
     "description": "Merge multiple PHPUnit reports into one file",
     "keywords": [
         "PHPUnit",
         "Coverage",
-        "SonarQube",
-        "TYPO3 CMS"
+        "SonarQube"
     ],
-    "homepage": "https://github.com/Nimut/phpunit-merger",
+    "homepage": "https://github.com/cyx01/phpunit-merger",
     "license": [
         "GPL-2.0+"
     ],
